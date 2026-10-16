@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>리고러코리아 첫 화면 시안</title>
+<meta name="description" content="KBL 선수가 신는 리고러 농구화, 한국 정식 판매. 본사 정품을 국내 가격과 국내 배송으로.">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+:root{--ink:#0b0b0b;--mut:#6b6b6b;--acc:#d7141a;--bg:#fff;--hdr:146px}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:"Pretendard Variable",Pretendard,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+/* 윅스 헤더 자리(실제 사이트에서는 윅스 헤더가 들어감) */
+.wixhdr{height:var(--hdr);background:#000;color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 120px;font-weight:900;font-style:italic;font-size:28px;letter-spacing:-.02em}
+.wixhdr small{font-size:12px;font-weight:600;font-style:normal;opacity:.7;letter-spacing:.1em}
+.hero{display:grid;grid-template-columns:1.05fr 1fr;min-height:calc(100vh - var(--hdr));max-height:760px}
+.hero .tx{padding:72px 64px 56px 120px;display:flex;flex-direction:column;justify-content:center}
+.kicker{font-size:13px;letter-spacing:.26em;font-weight:800;color:var(--acc)}
+h1{font-size:clamp(40px,4.2vw,60px);line-height:1.06;letter-spacing:-.03em;font-weight:900;margin:16px 0 18px;word-break:keep-all}
+.sub,.kicker{word-break:keep-all;max-width:100%}
+.cats a{white-space:nowrap}
+h1 em{font-style:normal;color:var(--acc)}
+.sub{font-size:19px;line-height:1.55;color:var(--mut);margin:0 0 30px;max-width:520px}
+.cta{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:#fff;font-weight:800;font-size:16px;padding:18px 28px;letter-spacing:.02em}
+.btn.alt{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.proof{display:flex;gap:26px;margin-top:34px;font-size:13.5px;color:var(--mut);font-weight:600}
+.proof b{display:block;color:var(--ink);font-size:22px;font-weight:900;letter-spacing:-.02em}
+.hero .im{position:relative;background:#111;overflow:hidden}
+.hero .im img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+.hero .im .tag{position:absolute;left:28px;bottom:26px;background:#fff;color:var(--ink);font-weight:800;font-size:13px;padding:10px 14px;letter-spacing:.06em}
+.cats{display:flex;gap:10px;justify-content:center;padding:18px 24px;border-bottom:1px solid #e6e6e6;flex-wrap:wrap}
+.cats a{border:1px solid #ddd;padding:12px 22px;font-weight:700;font-size:14px}
+@media(max-width:700px){
+  :root{--hdr:100px}
+  .wixhdr{padding:0 20px;font-size:22px}.wixhdr small{display:none}
+  .hero{display:block;min-height:0;max-height:none}
+  .hero .im{height:300px}
+  .hero .im img{object-position:center 40%}
+  .hero .tx{padding:22px 20px 24px}
+  h1{font-size:30px;margin:10px 0 10px;line-height:1.08}
+  .sub{font-size:15px;margin-bottom:18px}
+  .btn{width:100%;justify-content:center;padding:16px 20px}
+  .btn.alt{width:100%}
+  .proof{display:none}
+  .cats{justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap}
+}
+</style>
+</head>
+<body>
+<div class="wixhdr"><span>RIGORER</span><small>윅스 헤더 자리 (로고 · 로그인 · 장바구니)</small></div>
+
+<section class="hero">
+  <div class="tx">
+    <div class="kicker">RIGORER KOREA · 리고러 한국 공식 유통</div>
+    <h1>KBL 선수가 신는 농구화,<br>이제 <em>한국 정식 판매</em>.</h1>
+    <p class="sub">리고러 본사 정품을 국내 가격·국내 배송으로. Battle 3와 오스틴 리브스 AR3, 본사와 같은 날 입고됩니다.</p>
+    <div class="cta">
+      <a class="btn" href="https://www.rigorerkorea.com/shop" target="_top">농구화 보러 가기 →</a>
+      <a class="btn alt" href="https://www.rigorerkorea.com/agent" target="_top">에이전트 문의</a>
+    </div>
+    <div class="proof">
+      <div><b>308</b>본사 정품 품목</div>
+      <div><b>2~3일</b>국내 배송</div>
+      <div><b>31명</b>KBL 계약 대리 선수</div>
+    </div>
+  </div>
+  <div class="im">
+    <img src="https://cdn.shopify.com/s/files/1/0549/2975/2252/files/1_460089d7-e382-46c5-b88c-869d9e78f154.jpg?v=1790758367&width=1200" alt="리고러 Battle 3 농구화" fetchpriority="high">
+    <span class="tag">NEW · BATTLE 3 'SYMBIOSIS'</span>
+  </div>
+</section>
+
+<nav class="cats">
+  <a href="#">농구화</a><a href="#">슬라이드</a><a href="#">의류</a><a href="#">양말·용품</a><a href="#">키즈</a><a href="#">세일</a>
+</nav>
+</body>
+</html>
