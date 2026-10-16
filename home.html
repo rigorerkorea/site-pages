@@ -2,199 +2,129 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>RIGORER KOREA</title>
+<title>RIGORER KOREA · 리고러 한국 공식 유통 · KBL 에이전시</title>
+<meta name="description" content="From street to KBL, and next? 리고러코리아는 리고러 농구화·용품의 한국 공식 유통사이자 KBL 선수 30명의 계약을 대행한 농구 에이전시입니다.">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+<link rel="preconnect" href="https://static.wixstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preload" as="image" href="https://cdn.shopify.com/s/files/1/0549/2975/2252/files/1_460089d7-e382-46c5-b88c-869d9e78f154.jpg?v=1790758367&width=1200" fetchpriority="high">
 <style>
-:root{--ink:#0b0b0b;--mut:#6b6b6b;--line:#e8e8e8;--acc:#d7141a}
+:root{--ink:#0b0b0b;--mut:#8a8a8a;--line:#222;--acc:#d7141a;--paper:#f3f1ec}
 *{box-sizing:border-box}
-html,body{margin:0;background:#fff;color:var(--ink);font-family:"Pretendard","Malgun Gothic","Apple SD Gothic Neo","Noto Sans KR",sans-serif;-webkit-font-smoothing:antialiased}
+html,body{margin:0;background:#000;color:#fff;font-family:"Pretendard Variable",Pretendard,"Malgun Gothic","Apple SD Gothic Neo","Noto Sans KR",sans-serif;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}
-.wrap{max-width:1240px;margin:0 auto;padding:0 20px}
-.tick{background:var(--ink);color:#fff;text-align:center;font-size:12px;letter-spacing:.12em;padding:8px}
-.hero{position:relative;overflow:hidden;background:#111;color:#fff}
-.slides{display:flex;transition:transform .6s ease}
-.slide{min-width:100%;display:grid;grid-template-columns:1fr 1fr;align-items:center;min-height:520px}
-.slide img{width:100%;height:520px;object-fit:cover;object-position:center}
-.slide .tx{padding:48px}
-.slide h1{font-size:clamp(32px,5vw,64px);margin:0 0 12px;letter-spacing:-.02em;font-weight:900;line-height:1}
-.slide p{color:#cfcfcf;font-size:18px;margin:0 0 24px}
-.btn{display:inline-block;background:#fff;color:#000;font-weight:900;padding:14px 26px;letter-spacing:.08em}
-.dots{position:absolute;left:0;right:0;bottom:14px;text-align:center}
-.dots i{display:inline-block;width:9px;height:9px;border-radius:50%;background:#777;margin:0 4px;cursor:pointer}
-.dots i.on{background:#fff}
-.cats{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin:28px 0 10px}
-.cats a{display:block;border:1px solid var(--line);padding:16px 10px;text-align:center;font-weight:800;font-size:14px}
-.cats a:hover{border-color:var(--ink)}
-.row{margin:44px 0}
-.rh{display:flex;align-items:baseline;justify-content:space-between;border-bottom:2px solid var(--ink);padding-bottom:10px;margin-bottom:18px}
-.rh h2{margin:0;font-size:22px;letter-spacing:.04em;font-weight:900}
-.rh a{font-size:13px;font-weight:700;color:var(--mut)}
-.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px 18px}
-.p .pi{position:relative;aspect-ratio:1/1;background:#f5f5f5;overflow:hidden}
-.p img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
-.p:hover img{transform:scale(1.04)}
-.off{position:absolute;left:10px;top:10px;background:var(--acc);color:#fff;font-size:12px;font-weight:800;padding:3px 7px}
-.pn{font-size:14px;margin-top:10px;line-height:1.4;min-height:38px}
-.pp{font-size:15px;margin-top:4px}
-.pp s{color:var(--mut);margin-right:6px;font-weight:400}
-.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:56px 0}
-.svc a{display:block;background:var(--ink);color:#fff;padding:30px 26px;min-height:220px;position:relative}
-.svc a small{display:block;color:var(--acc);font-weight:800;letter-spacing:.2em;font-size:12px}
-.svc a b{display:block;font-size:24px;margin:10px 0 10px;font-weight:900}
-.svc a p{margin:0;color:#cfcfcf;line-height:1.6;font-size:14px}
-.svc a span{position:absolute;right:22px;bottom:18px;font-weight:800}
-.news{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:60px}
-.news a{border:1px solid var(--line);padding:20px}
-.news a b{display:block;font-size:16px;margin-bottom:8px}
-.news a p{margin:0;color:var(--mut);font-size:14px;line-height:1.6}
-@media(max-width:900px){.slide{grid-template-columns:1fr;min-height:0}.slide img{height:340px}.slide .tx{padding:26px 22px 40px}.cats{grid-template-columns:repeat(3,1fr)}.grid{grid-template-columns:repeat(2,1fr);gap:18px 12px}.svc,.news{grid-template-columns:1fr}}
-.topnav{display:flex;gap:32px;justify-content:center;padding:14px 0;border-bottom:1px solid #e6e6e6;font-size:13px;letter-spacing:.18em;font-weight:800}.topnav a{color:#111;text-decoration:none}.topnav a:hover{color:#c8102e}
+main{display:block}
+
+/* 1. 슬로건 */
+.brand{position:relative;padding:72px 24px 44px;text-align:center;overflow:hidden;background:#000}
+.brand:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 60% 70% at 50% 110%,rgba(215,20,26,.38),transparent 70%);pointer-events:none}
+.brand .ghost{position:absolute;left:50%;top:50%;transform:translate(-50%,-52%);font-size:clamp(90px,15vw,260px);font-weight:900;letter-spacing:-.05em;color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.09);white-space:nowrap;pointer-events:none;user-select:none}
+.brand .kicker{position:relative;font-size:12px;letter-spacing:.34em;font-weight:800;color:var(--acc)}
+.brand h1{position:relative;font-size:clamp(34px,5.4vw,78px);line-height:1.02;letter-spacing:-.035em;font-weight:900;margin:18px auto 16px;max-width:1100px;word-break:keep-all}
+.brand h1 span{color:var(--acc)}
+.brand p{position:relative;margin:0 auto;max-width:760px;color:#cfcfcf;font-size:clamp(15px,1.25vw,18px);line-height:1.65;word-break:keep-all}
+
+/* 2. 선택 패널 */
+.doors{display:grid;grid-template-columns:1fr 1fr;min-height:640px;max-height:760px}
+.door{position:relative;display:flex;flex-direction:column;justify-content:flex-end;padding:44px 56px 48px;overflow:hidden;isolation:isolate}
+.door img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-1;transition:transform .9s cubic-bezier(.2,.7,.2,1),filter .6s}
+.door:hover img{transform:scale(1.04)}
+.door .word{font-size:clamp(56px,7vw,124px);font-weight:900;letter-spacing:-.045em;line-height:.9;margin:0}
+.door .line{font-size:clamp(16px,1.4vw,20px);margin:14px 0 22px;line-height:1.5;word-break:keep-all;max-width:520px}
+.door .go{display:inline-flex;align-items:center;gap:12px;font-weight:800;font-size:15px;letter-spacing:.08em;padding:16px 24px;border:1.5px solid currentColor;transition:background .25s,color .25s}
+.door .go i{font-style:normal;transition:transform .25s}
+.door:hover .go i{transform:translateX(6px)}
+.door .num{position:absolute;top:36px;left:56px;font-size:12px;letter-spacing:.3em;font-weight:800;opacity:.75}
+.door.store{background:var(--paper);color:var(--ink)}
+.door.store img{object-position:center 55%;transform:scale(1.02)}
+.door.store:hover img{transform:scale(1.07)}
+.door.store:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(243,241,236,0) 35%,rgba(243,241,236,.92) 72%)}
+.door.store .go{background:var(--ink);color:#fff;border-color:var(--ink)}
+.door.store:hover .go{background:var(--acc);border-color:var(--acc)}
+.door.agency{background:#0b0b0b;color:#fff}
+.door.agency img{object-position:center top;filter:grayscale(100%) contrast(1.05)}
+.door.agency:hover img{filter:grayscale(0)}
+.door.agency:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(0,0,0,.05) 30%,rgba(0,0,0,.9) 75%)}
+.door.agency .go{background:var(--acc);color:#fff;border-color:var(--acc)}
+.door.agency:hover .go{background:#fff;color:var(--ink);border-color:#fff}
+
+/* 3. 숫자 띠 */
+.proof{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#000}
+.proof div{padding:30px 24px;text-align:center;border-right:1px solid var(--line)}
+.proof div:last-child{border-right:0}
+.proof b{display:block;font-size:clamp(30px,3.2vw,46px);font-weight:900;letter-spacing:-.03em;line-height:1}
+.proof span{display:block;margin-top:8px;font-size:13px;color:var(--mut);font-weight:600;letter-spacing:.04em}
+
+/* 4. 회사 소개 */
+.about{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;max-width:1240px;margin:0 auto;padding:72px 24px 64px;align-items:start}
+.about h2{font-size:clamp(26px,2.6vw,38px);font-weight:900;letter-spacing:-.03em;line-height:1.15;margin:0 0 18px;word-break:keep-all}
+.about p{margin:0 0 12px;color:#c9c9c9;line-height:1.75;font-size:15.5px;word-break:keep-all}
+.about .who{border-left:3px solid var(--acc);padding-left:20px}
+.about .who b{display:block;font-size:18px;margin-bottom:6px}
+.about .who small{display:block;color:var(--mut);font-size:13px;line-height:1.7}
+.about .links{margin-top:22px;display:flex;gap:22px;flex-wrap:wrap}
+.about .links a{font-weight:800;font-size:14px;letter-spacing:.06em;border-bottom:2px solid var(--acc);padding-bottom:4px}
+footer{padding:0 24px 40px;text-align:center;color:#666;font-size:12px;letter-spacing:.04em}
+
+@media(max-width:900px){
+  .brand{padding:48px 20px 32px}.brand h1{font-size:30px}
+  .doors{display:block;min-height:0;max-height:none}
+  .door{min-height:380px;padding:28px 22px 30px}
+  .door .num{top:22px;left:22px}
+  .door .word{font-size:64px}
+  .door .go{width:100%;justify-content:center}
+  .proof{grid-template-columns:repeat(2,1fr)}
+  .proof div:nth-child(2){border-right:0}.proof div:nth-child(1),.proof div:nth-child(2){border-bottom:1px solid var(--line)}
+  .about{grid-template-columns:1fr;gap:28px;padding:48px 20px 40px}
+}
 </style>
 </head>
 <body>
-<div class="tick">WHERE THERE IS A COURT, THERE IS RIGORER · 리고러 한국 공식 유통</div>
-<nav class="topnav"><a href="https://www.rigorerkorea.com/" target="_top">HOME</a><a href="https://www.rigorerkorea.com/shop" target="_top">스토어</a><a href="https://www.rigorerkorea.com/agent" target="_top">에이전트</a></nav>
-<div class="hero"><div class="slides" id="slides">
-<div class="slide"><img src="https://cdn.shopify.com/s/files/1/0549/2975/2252/files/1_460089d7-e382-46c5-b88c-869d9e78f154.jpg?v=1790758367" alt="RIGORER BATTLE 3"><div class="tx"><h1>RIGORER BATTLE 3</h1><p>본사 최신 농구화, 한국 정식 출시</p><a class="btn" href="https://www.rigorerkorea.com/shop" target="_top">SHOP NOW</a></div></div><div class="slide"><img src="https://cdn.shopify.com/s/files/1/0549/2975/2252/files/AR3_56db012d-1dad-4532-8580-bc52b1410b5c.png?v=1788257135" alt="AUSTIN REAVES AR3"><div class="tx"><h1>AUSTIN REAVES AR3</h1><p>오스틴 리브스 시그니처 라인</p><a class="btn" href="https://www.rigorerkorea.com/shop" target="_top">SHOP NOW</a></div></div><div class="slide"><img src="https://cdn.shopify.com/s/files/1/0549/2975/2252/files/1_da5a9d4f-2f95-49bc-8b9d-e32a784ee93d.jpg?v=1765952524" alt="BP1 · ON SALE"><div class="tx"><h1>BP1 · ON SALE</h1><p>브랜딘 포지엠스키 시그니처 최대 44% 할인</p><a class="btn" href="https://www.rigorerkorea.com/shop" target="_top">SHOP NOW</a></div></div>
-</div><div class="dots" id="dots"><i class="on" data-i="0"></i><i class="" data-i="1"></i><i class="" data-i="2"></i></div></div>
+<main>
+<section class="brand">
+  <div class="ghost" aria-hidden="true">RIGORER</div>
+  <div class="kicker">RIGORER KOREA · SINCE 2020</div>
+  <h1>FROM STREET TO KBL,<br>AND <span>NEXT?</span></h1>
+  <p>길거리 코트에서 KBL까지. 리고러코리아는 리고러 농구화·용품의 한국 공식 유통사이자, KBL 외국인·아시아쿼터·국내 선수의 계약을 대행하는 농구 에이전시입니다.</p>
+</section>
 
-<div class="wrap">
-<nav class="cats">
-  <a href="https://www.rigorerkorea.com/shop" target="_top">농구화</a><a href="https://www.rigorerkorea.com/shop" target="_top">슬라이드</a><a href="https://www.rigorerkorea.com/shop" target="_top">의류</a><a href="https://www.rigorerkorea.com/shop" target="_top">양말·용품</a><a href="https://www.rigorerkorea.com/shop" target="_top">키즈</a><a href="https://www.rigorerkorea.com/shop" target="_top">세일</a>
-</nav>
+<section class="doors">
+  <a class="door store" href="https://www.rigorerkorea.com/shop" target="_top">
+    <img src="https://cdn.shopify.com/s/files/1/0549/2975/2252/files/1_460089d7-e382-46c5-b88c-869d9e78f154.jpg?v=1790758367&width=1200" alt="리고러 Battle 3 농구화" width="1200" height="1200" fetchpriority="high">
+    <span class="num">01 · OFFICIAL STORE</span>
+    <h2 class="word">STORE</h2>
+    <p class="line">본사 정품 농구화·슬라이드·용품을 국내 가격, 국내 배송으로. Battle 3와 오스틴 리브스 AR3 입고.</p>
+    <span class="go">스토어 들어가기 <i>→</i></span>
+  </a>
+  <a class="door agency" href="https://www.rigorerkorea.com/agent" target="_top">
+    <img src="https://static.wixstatic.com/media/c83796_361c0c64569f4ef78de6d2159bff7e12~mv2.png/v1/fill/w_1000,h_1250,al_t,q_85,enc_auto/c83796_361c0c64569f4ef78de6d2159bff7e12~mv2.png" alt="스카티 제임스 · 고양 소노" width="1000" height="1250" loading="lazy">
+    <span class="num">02 · BASKETBALL AGENCY</span>
+    <h2 class="word">AGENCY</h2>
+    <p class="line">FIBA 라이선스 에이전트가 KBL 구단과 직접 협상합니다. 소속 선수 30명, 계약 구단 8곳.</p>
+    <span class="go">에이전시 보기 <i>→</i></span>
+  </a>
+</section>
 
-<section class="row"><div class="rh"><h2>BASKETBALL SNEAKERS</h2><a href="https://www.rigorerkorea.com/shop" target="_top">View All →</a></div><div class="grid"><a class="p" href="https://www.rigorerkorea.com/blank/리고러-battle-3-농구화-symbiosis-z326460113-3" target="_top">
-  <div class="pi"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0549/2975/2252/files/1_460089d7-e382-46c5-b88c-869d9e78f154.jpg?v=1790758367" alt="리고러 Battle 3 농구화 ‘Symbiosis’[Z326460113-3]"></div>
-  <div class="pn">Battle 3 농구화 ‘Symbiosis’</div>
-  <div class="pp"><b>₩112,000</b></div>
-</a><a class="p" href="https://www.rigorerkorea.com/blank/리고러-battle-3-농구화-black-feather-z326460113-2" target="_top">
-  <div class="pi"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0549/2975/2252/files/1_715bc73b-f1e2-47d8-8eaf-c9c2ea0ce5e8.jpg?v=1790757048" alt="리고러 Battle 3 농구화 ‘Black Feather’[Z326460113-2]"></div>
-  <div class="pn">Battle 3 농구화 ‘Black Feather’</div>
-  <div class="pp"><b>₩112,000</b></div>
-</a><a class="p" href="https://www.rigorerkorea.com/blank/리고러-ar3-농구화-sunset-yellow-california-purple-믹스-세트-z325360910-30" target="_top">
-  <div class="pi"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0549/2975/2252/files/AR3_56db012d-1dad-4532-8580-bc52b1410b5c.png?v=1788257135" alt="리고러 AR3 농구화 ‘Sunset Yellow’ &amp; 'California Purple' 믹스 컬러 세트[Z325360910-30]"></div>
-  <div class="pn">AR3 농구화 ‘Sunset Yellow’ &amp; 'California Purple' 믹스 컬러 세트</div>
-  <div class="pp"><b>₩161,000</b></div>
-</a><a class="p" href="https://www.rigorerkorea.com/blank/리고러-ar3-농구화-sunset-yellow-california-purple-믹스-세트-z325360910-30" target="_top">
-  <div class="pi"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0549/2975/2252/files/AR3_56db012d-1dad-4532-8580-bc52b1410b5c.png?v=1788257135" alt="리고러 AR3 농구화 ‘Sunset Yellow’ &amp; 'California Purple' Mixed Colorway[Z325360910-30]"></div>
-  <div class="pn">AR3 농구화 ‘Sunset Yellow’ &amp; 'California Purple' Mixed Colorway</div>
-  <div class="pp"><b>₩161,000</b></div>
-</a><a class="p" href="https://www.rigorerkorea.com/blank/리고러-ar3-농구화-sunset-yellow-세트-z325360910-29-z325350571" target="_top">
-  <div class="pi"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0549/2975/2252/files/29.png?v=1787038015" alt="리고러 AR3 농구화 ‘Sunset Yellow' 세트 [Z325360910-29-Z325350571]"></div>
-  <div class="pn">AR3 농구화 ‘Sunset Yellow' 세트</div>
-  <div class="pp"><b>₩161,000</b></div>
-</a><a class="p" href="https://www.rigorerkorea.com/blank/리고러-ar3-농구화-sunset-yellow-z325360910-29" target="_top">
-  <div class="pi"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0549/2975/2252/files/1_ce5a9bbb-3227-49d5-91aa-0b999b4fd885.jpg?v=1787037879" alt="리고러 AR3 농구화 ‘Sunset Yellow’ [Z325360910-29]"></div>
-  <div class="pn">AR3 농구화 ‘Sunset Yellow’</div>
-  <div class="pp"><b>₩140,000</b></div>
-</a><a class="p" href="https://www.rigorerkorea.com/blank/리고러-ar3-농구화-california-purple-세트-z325360910-28-z325350571" target="_top">
-  <div class="pi"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0549/2975/2252/files/28.png?v=1787037427" alt="리고러 AR3 농구화 ‘California Purple' 세트 [Z325360910-28-Z325350571]"></div>
-  <div class="pn">AR3 농구화 ‘California Purple' 세트</div>
-  <div class="pp"><b>₩161,000</b></div>
-</a><a class="p" href="https://www.rigorerkorea.com/blank/리고러-ar3-농구화-california-purple-z325360910-28" target="_top">
-  <div class="pi"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0549/2975/2252/files/1_ac3181f6-5c20-4a4f-b17f-084c36bcc6ec.jpg?v=1787036643" alt="리고러 AR3 농구화 ‘California Purple’ [Z325360910-28]"></div>
-  <div class="pn">AR3 농구화 ‘California Purple’</div>
-  <div class="pp"><b>₩140,000</b></div>
-</a></div></section>
-<section class="row"><div class="rh"><h2>ON SALE</h2><a href="https://www.rigorerkorea.com/shop" target="_top">View All →</a></div><div class="grid"><a class="p" href="https://www.rigorerkorea.com/blank/리고러-barefoot-shoes-pink-white-black-z126160702-5" target="_top">
-  <div class="pi"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0549/2975/2252/files/1_0af34776-a098-4252-9668-5a8ebcb750b3.jpg?v=1786956628" alt="리고러 Barefoot Shoes 'Pink/White/Black' [Z126160702-5]"><span class="off">-46%</span></div>
-  <div class="pn">Barefoot Shoes 'Pink/White/Black'</div>
-  <div class="pp"><s>₩140,000</s> <b>₩76,000</b></div>
-</a><a class="p" href="https://www.rigorerkorea.com/blank/리고러-barefoot-shoes-white-z126160702-2" target="_top">
-  <div class="pi"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0549/2975/2252/files/1_e3e43aab-783a-433f-b6ec-1f1e9e225dbf.jpg?v=1786956459" alt="리고러 Barefoot Shoes 'White' [Z126160702-2]"><span class="off">-46%</span></div>
-  <div class="pn">Barefoot Shoes 'White'</div>
-  <div class="pp"><s>₩140,000</s> <b>₩76,000</b></div>
-</a><a class="p" href="https://www.rigorerkorea.com/blank/리고러-barefoot-shoes-black-z126160702-1" target="_top">
-  <div class="pi"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0549/2975/2252/files/1_318df778-ec56-4ea6-ab84-482c2c135dc5.jpg?v=1786955831" alt="리고러 Barefoot Shoes 'Black' [Z126160702-1]"><span class="off">-46%</span></div>
-  <div class="pn">Barefoot Shoes 'Black'</div>
-  <div class="pp"><s>₩140,000</s> <b>₩76,000</b></div>
-</a><a class="p" href="https://www.rigorerkorea.com/blank/리고러-러닝화-grey-z126160712-3" target="_top">
-  <div class="pi"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0549/2975/2252/files/1_c96fcc1b-e0a0-4882-aea3-d72e15ce791c.jpg?v=1786955528" alt="리고러 러닝화 'Grey' [Z126160712-3]"><span class="off">-40%</span></div>
-  <div class="pn">러닝화 'Grey'</div>
-  <div class="pp"><s>₩140,000</s> <b>₩84,000</b></div>
-</a><a class="p" href="https://www.rigorerkorea.com/blank/리고러-wide-toe-box-러닝화-black-z126160791-1" target="_top">
-  <div class="pi"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0549/2975/2252/files/1_3ef56cdc-f76e-4b99-8bf1-25504dccec42.jpg?v=1786954204" alt="리고러 Wide‑toe‑box 러닝화 ‘Black’ [Z126160791-1]"><span class="off">-34%</span></div>
-  <div class="pn">Wide‑toe‑box 러닝화 ‘Black’</div>
-  <div class="pp"><s>₩140,000</s> <b>₩92,000</b></div>
-</a><a class="p" href="https://www.rigorerkorea.com/blank/리고러-wide-toe-box-러닝화-green-z126160791-2" target="_top">
-  <div class="pi"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0549/2975/2252/files/1_1c329348-552a-4ba2-b045-62d62bd67b81.jpg?v=1786952643" alt="리고러 Wide‑toe‑box 러닝화 ‘Green’ [Z126160791-2]"><span class="off">-34%</span></div>
-  <div class="pn">Wide‑toe‑box 러닝화 ‘Green’</div>
-  <div class="pp"><s>₩140,000</s> <b>₩92,000</b></div>
-</a><a class="p" href="https://www.rigorerkorea.com/blank/리고러-러닝화-white-z126160712-2" target="_top">
-  <div class="pi"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0549/2975/2252/files/1_b25a0aa9-f7be-4c4f-a01b-99643edede1b.jpg?v=1784628006" alt="리고러 러닝화 'White' [Z126160712-2]"><span class="off">-40%</span></div>
-  <div class="pn">러닝화 'White'</div>
-  <div class="pp"><s>₩140,000</s> <b>₩84,000</b></div>
-</a><a class="p" href="https://www.rigorerkorea.com/blank/리고러-러닝화-black-z126160712-1" target="_top">
-  <div class="pi"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0549/2975/2252/files/1_4f6bf287-82a6-45a5-a7cc-a35dc5d45594.jpg?v=1780311217" alt="리고러 러닝화 'Black' [Z126160712-1]"><span class="off">-40%</span></div>
-  <div class="pn">러닝화 'Black'</div>
-  <div class="pp"><s>₩140,000</s> <b>₩84,000</b></div>
-</a></div></section>
-<section class="row"><div class="rh"><h2>SLIDES</h2><a href="https://www.rigorerkorea.com/shop" target="_top">View All →</a></div><div class="grid"><a class="p" href="https://www.rigorerkorea.com/blank/리고러-mini-shark-슬라이드-2-khaki-z326160203-9" target="_top">
-  <div class="pi"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0549/2975/2252/files/1_eafeecf1-b83b-4a46-bd76-f4ce0c08a33b.jpg?v=1786954797" alt="리고러 Mini Shark 슬라이드 2 'Khaki' [Z326160203-9]"></div>
-  <div class="pn">Mini Shark 슬라이드 2 'Khaki'</div>
-  <div class="pp"><b>₩29,000</b></div>
-</a><a class="p" href="https://www.rigorerkorea.com/blank/리고러-mini-shark-슬라이드-2-blue-white-z326160203-8" target="_top">
-  <div class="pi"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0549/2975/2252/files/1_d143a586-3072-4919-ac87-ad8360a520de.jpg?v=1786954638" alt="리고러 Mini Shark 슬라이드 2 'Blue/White' [Z326160203-8]"></div>
-  <div class="pn">Mini Shark 슬라이드 2 'Blue/White'</div>
-  <div class="pp"><b>₩29,000</b></div>
-</a><a class="p" href="https://www.rigorerkorea.com/blank/리고러-mini-shark-슬라이드-2-pink-blue-z326160203-7" target="_top">
-  <div class="pi"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0549/2975/2252/files/1_27bb37ba-3830-493b-910f-231567ab01d2.jpg?v=1786954376" alt="리고러 Mini Shark 슬라이드 2 'Pink/Blue' [Z326160203-7]"></div>
-  <div class="pn">Mini Shark 슬라이드 2 'Pink/Blue'</div>
-  <div class="pp"><b>₩29,000</b></div>
-</a><a class="p" href="https://www.rigorerkorea.com/blank/리고러-dongdong-2-blue-z326160602-3" target="_top">
-  <div class="pi"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0549/2975/2252/files/2_5e0f566a-e462-4763-8e55-ce4d58f3be7e.jpg?v=1778243746" alt="리고러 Dongdong 2 'Blue' [Z326160602-3]"></div>
-  <div class="pn">Dongdong 2 'Blue'</div>
-  <div class="pp"><b>₩48,000</b></div>
-</a></div></section>
-<section class="row"><div class="rh"><h2>SOCKS &amp; ACCESSORIES</h2><a href="https://www.rigorerkorea.com/shop" target="_top">View All →</a></div><div class="grid"><a class="p" href="https://www.rigorerkorea.com/blank/리고러-practical-cobra-농구-양말-z124440399" target="_top">
-  <div class="pi"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0549/2975/2252/files/d92e076f69cb1a6f81c9bab8cd8f57a2_256ffcc0-51f1-4382-b255-6b8f3371b5ff.jpg?v=1763719561" alt="리고러 Practical 'Cobra' 농구 양말 [Z124440399]"></div>
-  <div class="pn">Practical 'Cobra' 농구 양말</div>
-  <div class="pp"><b>₩21,000</b></div>
-</a><a class="p" href="https://www.rigorerkorea.com/blank/리고러-practical-falcon-농구-양말-z124340330" target="_top">
-  <div class="pi"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0549/2975/2252/files/1_cb057ef0-126c-4d3c-8f40-a54f451d261c.jpg?v=1763719075" alt="리고러 Practical 'Falcon' 농구 양말 [Z124340330]"></div>
-  <div class="pn">Practical 'Falcon' 농구 양말</div>
-  <div class="pp"><b>₩21,000</b></div>
-</a><a class="p" href="https://www.rigorerkorea.com/blank/리고러-sports-light-proof-patellar-brace-z325330222" target="_top">
-  <div class="pi"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0549/2975/2252/files/7_40e433ef-8284-4b7b-b290-c2e7ca1afcdc.jpg?v=1762503091" alt="리고러 Sports Light-proof Patellar Brace [Z325330222]"></div>
-  <div class="pn">Sports Light-proof Patellar Brace</div>
-  <div class="pp"><b>₩15,000</b></div>
-</a><a class="p" href="https://www.rigorerkorea.com/shop" target="_top">
-  <div class="pi"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0549/2975/2252/files/1_548b7536-6978-454b-9beb-717323d58ac5.jpg?v=1785826999" alt="리고러 Austin Reaves Same Style Basketball Bag 2.0 Extra Large"></div>
-  <div class="pn">Austin Reaves Same Style Basketball Bag 2.0 Extra Large</div>
-  <div class="pp"><b>₩106,000</b></div>
-</a></div></section>
-<section class="row"><div class="rh"><h2>KIDS</h2><a href="https://www.rigorerkorea.com/shop" target="_top">View All →</a></div><div class="grid"><a class="p" href="https://www.rigorerkorea.com/blank/리고러-ar3-flame-키즈-농구화-z625360991-7" target="_top">
-  <div class="pi"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0549/2975/2252/files/1_e93e4937-7b52-49c5-ba7f-05e756da5bb8.jpg?v=1764830527" alt="리고러 AR3 'Flame' 키즈 농구화 [Z625360991-7]"></div>
-  <div class="pn">AR3 'Flame' 키즈 농구화</div>
-  <div class="pp"><b>₩92,000</b></div>
-</a><a class="p" href="https://www.rigorerkorea.com/blank/리고러-ar3-sunset-키즈-농구화-z625360991-3" target="_top">
-  <div class="pi"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0549/2975/2252/files/1_98428b8b-3de2-414f-86a7-f14e754d1620.jpg?v=1764830407" alt="리고러 AR3 'Sunset' 키즈 농구화 [Z625360991-3]"></div>
-  <div class="pn">AR3 'Sunset' 키즈 농구화</div>
-  <div class="pp"><b>₩92,000</b></div>
-</a><a class="p" href="https://www.rigorerkorea.com/blank/리고러-ar3-melon-berry-키즈-농구화-z625360991-2" target="_top">
-  <div class="pi"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0549/2975/2252/files/1_a2469998-70ae-4e56-aa30-ec7703e126ef.jpg?v=1764830074" alt="리고러 AR3 'Melon Berry' 키즈 농구화 [Z625360991-2]"></div>
-  <div class="pn">AR3 'Melon Berry' 키즈 농구화</div>
-  <div class="pp"><b>₩92,000</b></div>
-</a><a class="p" href="https://www.rigorerkorea.com/blank/리고러-ar3-hitman-키즈-농구화-z625360991-1" target="_top">
-  <div class="pi"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0549/2975/2252/files/1_57706ad0-a36a-4026-a6e0-9ff79c163600.jpg?v=1764829550" alt="리고러 AR3 'Hitman' 키즈 농구화 [Z625360991-1]"></div>
-  <div class="pn">AR3 'Hitman' 키즈 농구화</div>
-  <div class="pp"><b>₩92,000</b></div>
-</a></div></section>
+<section class="proof">
+  <div><b>308</b><span>본사 정품 품목</span></div>
+  <div><b>30</b><span>KBL 계약 대리 선수</span></div>
+  <div><b>8</b><span>계약 경험 구단</span></div>
+  <div><b>FIBA</b><span>라이선스 에이전트 No. 202200277</span></div>
+</section>
 
-<div class="svc">
-  <a href="https://www.rigorerkorea.com/agent" target="_top"><small>AGENT</small><b>에이전트 · 소속 선수</b><p>FIBA 라이선스 에이전트. KBL 외국인·아시아쿼터·국내 선수 36명의 계약을 대행했습니다.</p><span>→</span></a>
-  <a href="https://www.rigorerkorea.com/agent" target="_top"><small>SCOUTING DATA</small><b>글로벌 스카우팅 리포트</b><p>전 세계 41개 1부리그 1,100명을 엑셀 한 개에. 구단·대학·에이전시 대상 시즌 공급.</p><span>→</span></a>
-  <a href="https://www.rigorerkorea.com/agent" target="_top"><small>TRAINING CAMP</small><b>전지훈련 · 출장 코디네이트</b><p>필리핀 전지훈련, NBA 섬머리그 출장 기획부터 정산까지. 프로구단·엘리트 농구부.</p><span>→</span></a>
-</div>
-
-<section class="row"><div class="rh"><h2>RIGORER NEWS</h2><a href="https://www.instagram.com/rigorerkorea/" target="_blank" rel="noopener">Instagram →</a></div>
-<div class="news">
-  <a href="https://www.instagram.com/rigorerkorea/" target="_blank" rel="noopener"><b>Battle 3 한국 출시</b><p>리고러 본사 신제품 Battle 3 'Symbiosis' · 'Black Feather' 입고. 사이즈별 재고는 스마트스토어에서 확인하세요.</p></a>
-  <a href="https://www.instagram.com/rigorer.report/" target="_blank" rel="noopener"><b>2026-27 글로벌 스카우팅 리포트</b><p>41개 리그 득점·리바운드 TOP20, 빅맨 트래커 포함. 시즌 중 월 1회 업데이트 공급.</p></a>
-  <a href="https://smartstore.naver.com/rigorerkorea" target="_blank" rel="noopener"><b>단체 유니폼 · 팀 견적</b><p>학교·클럽·실업팀 유니폼과 트레이닝복 단체 주문은 네이버 스마트스토어 또는 카카오톡으로 문의.</p></a>
-</div></section>
-</div>
-<script>
-(function(){var s=document.getElementById('slides'),d=document.querySelectorAll('#dots i'),n=d.length,i=0,t;function go(k){i=(k+n)%n;s.style.transform='translateX(-'+(i*100)+'%)';d.forEach(function(x,j){x.classList.toggle('on',j===i)})}
-d.forEach(function(x){x.addEventListener('click',function(){go(+x.dataset.i);clearInterval(t);t=setInterval(function(){go(i+1)},5000)})});t=setInterval(function(){go(i+1)},5000);})();
-</script>
+<section class="about">
+  <div>
+    <h2>신는 사람과 뛰는 사람,<br>둘 다 리고러코리아의 고객입니다.</h2>
+    <p>동호인에게는 KBL 선수가 신는 농구화를 해외 직구 없이 사는 가장 빠른 길을, 선수에게는 시즌 데이터로 자기 가치를 증명하고 다음 계약을 만드는 에이전트를 제공합니다.</p>
+    <p>유통과 에이전시를 한 회사가 하는 이유는 하나입니다. 코트 위에서 무엇이 통하는지를 가장 가까이서 보기 때문입니다.</p>
+    <div class="links"><a href="https://www.rigorerkorea.com/shop" target="_top">STORE</a><a href="https://www.rigorerkorea.com/agent" target="_top">AGENCY</a><a href="mailto:rigorerreport@naver.com">CONTACT</a></div>
+  </div>
+  <div class="who">
+    <b>장경록 Tommy Jang</b>
+    <small>리고러코리아 대표 · FIBA Licensed Agent · KBL 등록 에이전트<br>rigorerreport@naver.com · +82 10-3531-2670<br>부산광역시 영도구 절영로20번길 8, 1층</small>
+  </div>
+</section>
+</main>
+<footer>© RIGORER KOREA · 선수 사진 출처: KBL 공식 홈페이지 프로필</footer>
 </body></html>
