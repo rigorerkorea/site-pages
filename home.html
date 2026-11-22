@@ -51,13 +51,12 @@ br.m{display:none}
 .door .go i{font-style:normal;transition:transform .25s}
 .door:hover .go i{transform:translateX(6px)}
 .door .num{position:absolute;top:36px;left:56px;font-size:12px;letter-spacing:.3em;font-weight:800;opacity:.75}
-.door.store{background:var(--paper);color:var(--ink)}
-.door.store img{object-position:center 55%;transform:scale(1.02)}
-.door.store:hover img{transform:scale(1.07)}
-.door.store:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(243,241,236,0) 35%,rgba(243,241,236,.92) 72%)}
-.door.store .go{background:var(--ink);color:#fff;border-color:var(--ink)}
-.door.store:hover .go{background:var(--acc);border-color:var(--acc)}
-.door.agency{background:#0b0b0b;color:#fff}
+.door.store{background:#0b0b0b;color:#fff}
+.door.store img{object-position:center 30%}
+.door.store:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(0,0,0,0) 42%,rgba(0,0,0,.88) 78%)}
+.door.store .go{background:#fff;color:var(--ink);border-color:#fff}
+.door.store:hover .go{background:var(--acc);color:#fff;border-color:var(--acc)}
+.door.agency{background:#0b0b0b;color:#fff;border-left:1px solid #1f1f1f}
 .door.agency img{object-position:center top;filter:grayscale(100%) contrast(1.05)}
 .door.agency:hover img{filter:grayscale(0)}
 .door.agency:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(0,0,0,.05) 30%,rgba(0,0,0,.9) 75%)}
@@ -85,7 +84,7 @@ footer{padding:0 24px 40px;text-align:center;color:#8f8f8f;font-size:12px;letter
 @media(max-width:900px){
   .brand{padding:44px 20px 32px}.brand h1{font-size:36px;line-height:1.02}br.m{display:inline}
   .doors{display:block;min-height:0;max-height:none}
-  .door{min-height:380px;padding:28px 22px 30px}
+  .door{min-height:380px;padding:28px 22px 30px}.door.agency{border-left:0;border-top:1px solid #1f1f1f}
   .door .num{top:22px;left:22px}
   .door .word{font-size:64px}
   .door .go{width:100%;justify-content:center}
@@ -94,7 +93,7 @@ footer{padding:0 24px 40px;text-align:center;color:#8f8f8f;font-size:12px;letter
   .about{grid-template-columns:1fr;gap:28px;padding:48px 20px 40px}
 }
 /*nosb*/html{scrollbar-width:none}html::-webkit-scrollbar,body::-webkit-scrollbar{display:none;width:0;height:0}
-/*msmall*/footer,.proof span{word-break:keep-all}@media(max-width:560px){.brand{padding:34px 18px 26px}.brand .kicker{font-size:10px;letter-spacing:.28em}.brand h1{font-size:27px;line-height:1.06;margin:12px auto 12px}.brand p{font-size:12.5px;line-height:1.7}.door{min-height:300px;padding:22px 18px 22px}.door .num{top:18px;left:18px;font-size:10px;letter-spacing:.24em}.door .word{font-size:40px}.door .line{font-size:13px;margin:10px 0 16px;line-height:1.6}.door .go{font-size:13px;padding:12px 16px;letter-spacing:.04em}.proof div{padding:20px 10px}.proof b{font-size:22px}.proof span{font-size:11px;margin-top:6px}.about{padding:36px 18px 30px;gap:22px}.about h2{font-size:19px;margin-bottom:12px}.about p{font-size:13px;line-height:1.75}.about .who b{font-size:14.5px}.about .who small{font-size:11.5px}.about .links{margin-top:16px;gap:18px}.about .links a{font-size:12px}footer{font-size:10.5px;padding:0 18px 28px}}
+/*msmall*/footer,.proof span{word-break:keep-all}@media(max-width:560px){.brand{padding:34px 18px 26px}.brand .kicker{font-size:10px;letter-spacing:.28em}.brand h1{font-size:27px;line-height:1.06;margin:12px auto 12px}.brand p{font-size:12.5px;line-height:1.7}.door{min-height:300px;padding:22px 18px 22px}.door.store img{transform:translateY(-9%)}.door .num{top:18px;left:18px;font-size:10px;letter-spacing:.24em}.door .word{font-size:40px}.door .line{font-size:13px;margin:10px 0 16px;line-height:1.6}.door .go{font-size:13px;padding:12px 16px;letter-spacing:.04em}.proof div{padding:20px 10px}.proof b{font-size:22px}.proof span{font-size:11px;margin-top:6px}.about{padding:36px 18px 30px;gap:22px}.about h2{font-size:19px;margin-bottom:12px}.about p{font-size:13px;line-height:1.75}.about .who b{font-size:14.5px}.about .who small{font-size:11.5px}.about .links{margin-top:16px;gap:18px}.about .links a{font-size:12px}footer{font-size:10.5px;padding:0 18px 28px}}
 </style>
 </head>
 <body>
@@ -112,7 +111,7 @@ footer{padding:0 24px 40px;text-align:center;color:#8f8f8f;font-size:12px;letter
 
 <section class="doors">
   <a class="door store" href="https://www.rigorerkorea.com/shop" target="_top">
-    <img src="https://cdn.shopify.com/s/files/1/0549/2975/2252/files/1_460089d7-e382-46c5-b88c-869d9e78f154.jpg?v=1790758367&width=1200" alt="리고러 Battle 3 농구화" width="1200" height="1200" loading="lazy">
+    <img src="photos/door_store.jpg" alt="리고러 Battle 3 농구화" width="1400" height="1400" loading="lazy">
     <span class="num">01 · OFFICIAL STORE</span>
     <h2 class="word">STORE</h2>
     <p class="line">본사 정품 농구화·슬라이드·용품을 국내 가격, 국내 배송으로. Battle 3와 오스틴 리브스 AR3 입고.</p>
