@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://static.wixstatic.com" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" media="print" onload="this.media=&quot;all&quot;">
 <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"></noscript>
-<link rel="preload" as="image" href="https://cdn.shopify.com/s/files/1/0549/2975/2252/files/1_460089d7-e382-46c5-b88c-869d9e78f154.jpg?v=1790758367&width=1200" fetchpriority="high">
+
 <style>
 :root{--ink:#0b0b0b;--mut:#a6a6a6;--line:#222;--acc:#d7141a;--paper:#f3f1ec}
 *{box-sizing:border-box}
@@ -26,6 +26,19 @@ br.m{display:none}
 .brand h1{position:relative;font-size:clamp(34px,5.4vw,78px);line-height:1.02;letter-spacing:-.035em;font-weight:900;margin:18px auto 16px;max-width:1100px;word-break:keep-all}
 .brand h1 span{color:var(--acc)}
 .brand p{position:relative;margin:0 auto;max-width:760px;color:#cfcfcf;font-size:clamp(15px,1.25vw,18px);line-height:1.65;word-break:keep-all}
+
+/* 1b. 사진 메인(--hero) : 사진은 1500px 까지만 커지고 그 밖은 같은 검정으로 이어진다. 글자는 사진 위쪽 빈 곳에 얹는다 */
+.hero{position:relative;background:#060606;overflow:hidden;text-align:center}
+.hero picture,.hero img{display:block}
+.hero img{width:100%;max-width:1500px;height:auto;margin:0 auto}
+.hero .txt{position:absolute;left:0;right:0;top:0;padding-top:min(2.3vw,34px)}
+.hero .kicker{font-size:clamp(10px,.8vw,12px);letter-spacing:.34em;font-weight:800;color:var(--acc)}
+.hero h1{font-size:min(3.3vw,50px);line-height:1.04;letter-spacing:-.035em;font-weight:900;margin:min(.9vw,13px) 0 0}
+.hero h1 span{color:var(--acc)}
+.hero br.hm{display:none}
+.lead{background:#060606;padding:6px 24px 40px;text-align:center}
+.lead p{margin:0 auto;max-width:760px;color:#cfcfcf;font-size:clamp(15px,1.25vw,18px);line-height:1.65;word-break:keep-all}
+@media(max-width:640px){.hero .txt{padding-top:8vw}.hero .kicker{font-size:3.1vw;letter-spacing:.28em}.hero h1{font-size:7.4vw;line-height:1.06;margin-top:3vw}.hero br.hm{display:inline}.lead{padding:4px 18px 26px}.lead p{font-size:12.5px;line-height:1.7}}
 
 /* 2. 선택 패널 */
 .doors{display:grid;grid-template-columns:1fr 1fr;min-height:640px;max-height:760px}
@@ -86,16 +99,20 @@ footer{padding:0 24px 40px;text-align:center;color:#8f8f8f;font-size:12px;letter
 </head>
 <body>
 <main>
-<section class="brand">
-  <div class="ghost" aria-hidden="true">RIGORER</div>
-  <div class="kicker">RIGORER KOREA · SINCE 2020</div>
-  <h1>FROM STREET<br class="m"> TO KBL,<br>AND <span>NEXT?</span></h1>
+<section class="hero">
+  <picture><source media="(max-width:640px)" srcset="photos/hero_m.jpg" width="1080" height="1150"><img src="photos/hero_pc.jpg" width="1920" height="860" alt="리고러코리아 소속 KBL 선수 15명" fetchpriority="high"></picture>
+  <div class="txt">
+    <div class="kicker">RIGORER KOREA · SINCE 2020</div>
+    <h1>FROM STREET TO KBL,<br class="hm"> AND <span>NEXT?</span></h1>
+  </div>
+</section>
+<section class="lead">
   <p>길거리 코트에서 KBL까지. 리고러코리아는 리고러 농구화·용품의 한국 공식 유통사이자, KBL 외국인·아시아쿼터·국내 선수의 계약을 대행하는 농구 에이전시입니다.</p>
 </section>
 
 <section class="doors">
   <a class="door store" href="https://www.rigorerkorea.com/shop" target="_top">
-    <img src="https://cdn.shopify.com/s/files/1/0549/2975/2252/files/1_460089d7-e382-46c5-b88c-869d9e78f154.jpg?v=1790758367&width=1200" alt="리고러 Battle 3 농구화" width="1200" height="1200" fetchpriority="high">
+    <img src="https://cdn.shopify.com/s/files/1/0549/2975/2252/files/1_460089d7-e382-46c5-b88c-869d9e78f154.jpg?v=1790758367&width=1200" alt="리고러 Battle 3 농구화" width="1200" height="1200" loading="lazy">
     <span class="num">01 · OFFICIAL STORE</span>
     <h2 class="word">STORE</h2>
     <p class="line">본사 정품 농구화·슬라이드·용품을 국내 가격, 국내 배송으로. Battle 3와 오스틴 리브스 AR3 입고.</p>
