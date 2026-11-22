@@ -16,6 +16,7 @@
 html,body{margin:0;background:#000;color:#fff;font-family:"Pretendard Variable",Pretendard,"Malgun Gothic","Apple SD Gothic Neo","Noto Sans KR",sans-serif;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}
 main{display:block}
+br.m{display:none}
 
 /* 1. 슬로건 */
 .brand{position:relative;padding:72px 24px 44px;text-align:center;overflow:hidden;background:#000}
@@ -69,7 +70,7 @@ main{display:block}
 footer{padding:0 24px 40px;text-align:center;color:#8f8f8f;font-size:12px;letter-spacing:.04em}
 
 @media(max-width:900px){
-  .brand{padding:48px 20px 32px}.brand h1{font-size:30px}
+  .brand{padding:44px 20px 32px}.brand h1{font-size:36px;line-height:1.02}br.m{display:inline}
   .doors{display:block;min-height:0;max-height:none}
   .door{min-height:380px;padding:28px 22px 30px}
   .door .num{top:22px;left:22px}
@@ -86,7 +87,7 @@ footer{padding:0 24px 40px;text-align:center;color:#8f8f8f;font-size:12px;letter
 <section class="brand">
   <div class="ghost" aria-hidden="true">RIGORER</div>
   <div class="kicker">RIGORER KOREA · SINCE 2020</div>
-  <h1>FROM STREET TO KBL,<br>AND <span>NEXT?</span></h1>
+  <h1>FROM STREET<br class="m"> TO KBL,<br>AND <span>NEXT?</span></h1>
   <p>길거리 코트에서 KBL까지. 리고러코리아는 리고러 농구화·용품의 한국 공식 유통사이자, KBL 외국인·아시아쿼터·국내 선수의 계약을 대행하는 농구 에이전시입니다.</p>
 </section>
 
